@@ -1,0 +1,48 @@
+<IfModule mod_rewrite.c>
+
+#kode dari tiap halaman
+#001 agenda.php
+#002 artikel.php
+#003 artikeldet.php
+#004 galeri.php
+#005 kontak.php
+#006 news.php
+#007 newsdet.php
+#008 peng.php
+#009 pengdet.php
+#010 ppdb.php
+#011 statis.php
+#012 download.php
+
+RewriteEngine on
+RewriteRule ^phore$ hore.php [L]
+#ErrorDocument 404 /smk/web/404.php
+
+#RewriteRule ^index\.html$ index.php [L]
+
+#RewriteRule ^(.*)-011\.html$ statis.php?id=$1 [L]
+
+#RewriteRule ^agenda\.html$ agenda.php [L]
+#RewriteRule ^kontak\.html$ kontak.php [L]
+
+#RewriteRule ^artikel\.html$ artikel.php [L]
+#RewriteRule ^([0-9]+)-([0-9]+)-arsip-artikel\.html$ artikel.php?thn=$1&bln=$2 [L]
+#RewriteRule ^(.*)-artikel\.html$ artikel.php?cr=$1 [L]
+#RewriteRule ^(.*)-([0-9]+)-artikel-detail\.html$ artikeldet.php?id=$2 [L]
+
+#RewriteRule ^galeri\.html$ galeri.php [L]
+
+#RewriteRule ^berita\.html$ news.php [L]
+#RewriteRule ^([0-9]+)-([0-9]+)-arsip-berita\.html$ news.php?thn=$1&bln=$2 [L]
+#RewriteRule ^(.*)-berita\.html$ news.php?cr=$1 [L]
+#RewriteRule ^(.*)-([0-9]+)-berita-detail\.html$ newsdet.php?id=$2 [L]
+
+#RewriteRule ^pengumuman\.html$ peng.php [L]
+#RewriteRule ^([0-9]+)-([0-9]+)-arsip-pengumuman\.html$ peng.php?thn=$1&bln=$2 [L]
+#RewriteRule ^(.*)-pengumuman\.html$ peng.php?cr=$1 [L]
+#RewriteRule ^(.*)-([0-9]+)-pengumuman-detail\.html$ pengdet.php?id=$2 [L]
+
+#RewriteRule ^download\.html$ dl.php [L]
+
+#Options All -Indexes
+</IfModule>

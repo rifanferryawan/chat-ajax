@@ -1,0 +1,1 @@
+ada yang bisa saya bantu kawan
